@@ -63,6 +63,7 @@
         </tbody>
         <%
             }
+            connection.close();
         %>
     </table>
 </div>

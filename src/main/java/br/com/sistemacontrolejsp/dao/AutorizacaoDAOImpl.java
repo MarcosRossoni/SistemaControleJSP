@@ -66,6 +66,9 @@ public class AutorizacaoDAOImpl implements AutorizacaoDAO {
 
                 listAutorizacao.add(autorizacaoDTO);
             }
+
+            resultSet.close();
+            preparedStatement.close();
         } catch (SQLException e){
             throw new RuntimeException(e);
         }

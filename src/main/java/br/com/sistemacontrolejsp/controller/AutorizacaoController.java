@@ -12,8 +12,6 @@ import java.sql.SQLException;
 
 public class AutorizacaoController {
 
-    Connection connection = ConnectionFactory.getConnection();
-
     public void verificaAutorizacao(AutorizacaoDTO autorizacaoDTO) throws SQLException {
 
         if (autorizacaoDTO.getProcedimento().equals(1234) && autorizacaoDTO.getIdade().equals(10)
@@ -54,6 +52,7 @@ public class AutorizacaoController {
     }
 
     private void cadastrarAutorizacao(AutorizacaoDTO autorizacaoDTO) throws SQLException {
+        Connection connection = ConnectionFactory.getConnection();
         Autorizacao autorizacao = new Autorizacao(
                 autorizacaoDTO.getDsNome(),
                 autorizacaoDTO.getIdade(),
