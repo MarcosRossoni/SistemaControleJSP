@@ -11,5 +11,6 @@ esta disponivel no reposositorio do link a seguir https://github.com/MarcosRosso
 funcionamento do mesmo estão disponíveis em seu respectivo Readme.md.
 
 
-Após as devidas tratativas, basta startar o projeto Sistema de Controle JSP e acessar http://localhost:8080/sistema-controle/pagina-inicial.html
-e escolher se deseja cadastrar um procedimento ou visualizar os que já estão cadastrados.
+Após as devidas tratativas, basta startar o projeto Sistema de Controle JSP com o comando <b>mvn jetty:run</b> e acessar 
+http://localhost:8080/sistema-controle/pagina-inicial.html e escolher se deseja cadastrar um procedimento ou visualizar 
+os que já estão cadastrados.
